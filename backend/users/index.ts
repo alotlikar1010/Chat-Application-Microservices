@@ -1,9 +1,9 @@
 import express from "express";
 import dotenv from "dotenv";
-import connectDB from "../config/db.js";
+import connectDB from "./src/config/db.js";
 import { createClient } from "redis";
-import userRoutes from "../routes/index.js"
-import { connectRabbitMQ } from "../config/rabbitmq.js";
+import userRoutes from "./src/routes/index.js"
+import { connectRabbitMQ } from "./src/config/rabbitmq.js";
 dotenv.config();
 const app = express();
 const port = 5000;
